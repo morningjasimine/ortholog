@@ -16,13 +16,12 @@ This project is develop for single copy orthologs  detection based on colinear o
 ```
 
 ## Run program step by step
-#  blast
-0) blastp all.pep.fa to all.pep.fa, and generate m8 format result.
 
-#  filter blast result according to conditions in config file, and result file will be writen into 1_blastp directory
-1) perl Step01.pl <m8 file> <pep file> <config>
+<b>1) blast</b>
+blastp all.pep.fa to all.pep.fa, and generate m8 format result.
 
-#  detect single copy orthologs, and result file will be writen into 2_ortholog directory
-2) perl Step02.pl <config> <gff dir>
+<b>2) filter blast result according to conditions in config file, and result file will be writen into 1_blastp directory</b>
+perl Step01.pl <m8 file> <pep file> <config>
 
-test
+<b>3) detect single copy orthologs, and result file will be writen into 2_ortholog directory</b>
+perl Step02.pl <config> <gff dir>
