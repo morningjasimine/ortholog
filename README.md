@@ -22,4 +22,4 @@ This project is develop for single copy orthologs  detection based on colinear o
 #  detect single copy orthologs, and result file will be writen into 2_ortholog directory
 2) perl Step02.pl <config> <gff dir>
 
-
+test
