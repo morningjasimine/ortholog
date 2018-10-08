@@ -7,11 +7,14 @@ This project is develop for single copy orthologs  detection based on colinear o
 3) and rename gene name with a unique species-specific prefix, like HOMO_ENSP00000220809
 4) cat all fasta format protein file into one file, like all.pep.fa 
 5) generate a config file as follow format:
+```
 	#prefix type    identity	coverage
 	HOMO	ref	    0.5			0.5
 	CITE	nonref	0.5			0.5
 	RAT     nonref	0.5			0.5
 	#--END--
+```
+
 ## Run program step by step
 #  blast
 0) blastp all.pep.fa to all.pep.fa, and generate m8 format result.
